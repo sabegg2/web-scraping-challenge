@@ -18,6 +18,12 @@ In the main folder, I have included:
 
 - Various graphical outputs from part 2 (shown in discussion below).
 
+## Part 1 Analysis
+
+For part 1, we stored each title-and-preview pair in a Python dictionary and printed the list in the notebook file. Here is a screenshot of the printed list:
+
+<img src="output/part_1_dict_list.png" width=700> 
+
 
 ## Part 2 Analysis
 
@@ -40,11 +46,11 @@ Answer:
 
 <img src="output/avg_min_temp_by_month.png" width=400> <img src="output/avg_min_temp_by_month_sorted.png" width=400>
 
-On average, minimum tempearture on Mars is lowest in the third month and highest in the eighth month. In other words, the third month has the coldest minimum temperature on Mars, and the eighth month is the warmest.
+On average, minimum tempearture on Mars is lowest in the third month and highest in the eighth month. Assuming minimum temperature is a good proxy for average temperature on Mars, the third month is the coldest and the eighth month is the warmest.
 
-But we can dive into this in a bit more detail. The bar chart for average minimum temperature by month, ordered by month, shows that the average minimum temperature by month roughly follows a sinusoidal pattern with a period of twelve months, with a valley around the third/fourth months and peak around the eighth/ninth months.
+We can dive into this in a bit more detail. The bar chart for average minimum temperature by month, ordered by month, shows that the average minimum temperature by month roughly follows a sinusoidal pattern with a period of twelve months, with a valley around Months 3/4 and a peak around Months 8/9.
 
-But the minimum temperatures are always between -70 to -80 degrees Celcius....brrr!
+Notice that the minimum temperatures are always between -70 to -80 degrees Celcius....brrr!
 
 ---
 Question: Which months have the lowest and the highest atmospheric pressure on Mars? 
@@ -55,7 +61,7 @@ Answer:
 
 On average, atmospheric pressure is lowest in the sixth month and highest in the ninth month. 
 
-But we can dive into this in a bit more detail. The bar chart for average pressure by month, ordered by month, shows that the average atmospheric pressure by month roughly follows a sinusolidal pattern with a period of six months, with valleys on Month 6 and Month 12 and peaks on Month 3 and Month 9.
+We can dive into this in a bit more detail. The bar chart for average pressure by month, ordered by month, shows that the average atmospheric pressure by month roughly follows a sinusolidal pattern with a period of six months, with valleys on Month 6 and Month 12 and peaks on Month 3 and Month 9.
 
 ---
 Question: About how many terrestrial (Earth) days exist in a Martian year? 
@@ -64,7 +70,7 @@ Answer:
 
 <img src="output/min_temp_vs_day_count_2.png" width=700> <img src="output/min_temp_vs_day_count.png" width=300>
 
-We can use the graph of minimum temperature vs. terrestraial days to estimate the number of terrestrial days in a Martian year by looking at the peak-to-peak or trough-to-trough. The graph with the smaller horizntal:vertical aspect matches that in the Module Challenge description, but the graph that has a larger horizontal:vertical aspect ratio is more useful for measuring peak-to-peak and trough-to-trough.
+We can use the graph of minimum temperature vs. terrestrial days to estimate the number of terrestrial days in a Martian year by looking at the peak-to-peak or trough-to-trough distances. The graph with the smaller horizontal:vertical aspect matches that in the Module Challenge description, but the graph that has a larger horizontal:vertical aspect ratio is more useful for measuring peak-to-peak and trough-to-trough.
 
 Peak-to-Peak
 
@@ -77,6 +83,9 @@ Trough-to-Trough
 1230 - 540 = 690
 
 So a year on Mars appears to be around 690 days. Internet search confirms that a Mars year is equivalent to 687 earth days.
+
+(Note: The x-axis is the number of terrestrial days. In order to get this from the dataset, I created a new column that gives the difference in terrestrial days from the first datapoint. This is necessary for the correct x-values because there are missing terrestraial days, so we cannot use the index, and sols are not quite identical to terrestral days (they are 40 minutes longer).)
+
 
 ## External Resources
 
