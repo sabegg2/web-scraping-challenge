@@ -22,7 +22,7 @@ In the main folder, I have included:
 
 For part 1, we stored each title-and-preview pair in a Python dictionary and printed the list in the notebook file. Here is a screenshot of the printed list:
 
-<img src="output/part_1_dict_list.png" width=400> 
+<img src="output/part_1_dict_list.png" width=700> 
 
 
 ## Part 2 Analysis
