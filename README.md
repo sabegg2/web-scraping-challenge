@@ -68,7 +68,7 @@ Question: About how many terrestrial (Earth) days exist in a Martian year?
 
 Answer:
 
-<img src="output/min_temp_vs_day_count_2.png" width=700> <img src="output/min_temp_vs_day_count.png" width=300>
+<img src="output/min_temp_vs_day_count_2.png" width=800> <img src="output/min_temp_vs_day_count.png" width=400>
 
 We can use the graph of minimum temperature vs. terrestrial days to estimate the number of terrestrial days in a Martian year by looking at the peak-to-peak or trough-to-trough distances. The graph with the smaller horizontal:vertical aspect matches that in the Module Challenge description, but the graph that has a larger horizontal:vertical aspect ratio is more useful for measuring peak-to-peak and trough-to-trough.
 
